@@ -3,15 +3,13 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-adsense-account" content="ca-pub-1405909607524288">
-  <title>Balshakti Registration – Sahaj Yoga for Children</title>
+<meta name="google-adsense-account" content="ca-pub-1405909607524288">
+  <title>Balshakti Seminar – Sahaj Yoga for Children</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <script src="/_sdk/element_sdk.js"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1405909607524288"
-     crossorigin="anonymous"></script>
   <script src="/_sdk/data_sdk.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;font-family:'Poppins',sans-serif}
@@ -37,7 +35,7 @@ html,body{height:100%;font-family:'Poppins',sans-serif}
 .lotus-bg{background:radial-gradient(ellipse at 30% 20%,rgba(251,191,36,0.08) 0%,transparent 50%),radial-gradient(ellipse at 70% 80%,rgba(56,189,248,0.08) 0%,transparent 50%)}
 .btn-primary{background:linear-gradient(135deg,#f59e0b,#f97316);color:#fff;border:none;border-radius:.75rem;padding:.7rem 1.8rem;font-weight:600;cursor:pointer;transition:all .3s;font-family:'Poppins',sans-serif}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,158,11,0.4)}
-.btn-primary:disabled{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none;background:#cbd5e1;color:#64748b;}
 .tab-btn{padding:.5rem 1.2rem;border-radius:9999px;font-weight:500;cursor:pointer;transition:all .3s;border:2px solid transparent;background:#f1f5f9;font-family:'Poppins',sans-serif;font-size:.85rem}
 .tab-btn.active{background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;border-color:transparent}
 .progress-bar{height:8px;border-radius:4px;background:#e5e7eb;overflow:hidden}
@@ -58,284 +56,351 @@ tailwind.config={theme:{extend:{colors:{saffron:'#f59e0b',sky:'#38bdf8',lotus:'#
 </script>
   <style>body { box-sizing: border-box; }</style>
  </head>
- <body class="h-full bg-warmWhite text-gray-800">
-  <div id="app" class="h-full w-full overflow-auto lotus-bg"><!-- Navigation -->
-   <nav id="navbar" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+ <body class="h-full bg-warmWhite text-gray-800 lotus-bg">
+  <div id="app" class="h-full w-full overflow-auto"><nav id="navbar" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-     <div class="flex items-center gap-2 cursor-pointer" onclick="navigateTo('home')"><span class="text-3xl anim-float">🪷</span> <span id="nav-title" class="font-display text-xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">Balshakti Registration</span>
+     <div class="flex items-center gap-2 cursor-pointer" onclick="navigateTo('home')"><span class="text-3xl anim-float">🪷</span> <span id="nav-title" class="font-display text-xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent" data-en="Chh.SambhajiNagar Balshakti Seminar" data-mr="छत्रपती संभाजीनगर बालशक्ती सेमिनार">Chh.SambhajiNagar Balshakti Seminar</span>
      </div><button id="menu-toggle" class="md:hidden p-2" onclick="toggleMenu()"><i data-lucide="menu" class="w-6 h-6"></i></button>
-     <div id="nav-links" class="hidden md:flex items-center gap-5 text-sm font-medium"><a class="nav-link cursor-pointer" onclick="navigateTo('home')">🏠 Home</a> <a class="nav-link cursor-pointer" onclick="navigateTo('about')">🙏 About</a> <a class="nav-link cursor-pointer" onclick="navigateTo('register')">📋 Register</a> <a class="nav-link cursor-pointer" onclick="navigateTo('values')">🌸 Values</a> <a class="nav-link cursor-pointer" onclick="navigateTo('gallery')">📸 Gallery</a> <a class="nav-link cursor-pointer" onclick="navigateTo('contact')">📞 Contact</a> <button class="tab-btn text-xs" onclick="toggleLang()" id="lang-btn">हिंदी</button>
+     <div id="nav-links" class="hidden md:flex items-center gap-5 text-sm font-medium">
+      <a class="nav-link cursor-pointer" onclick="navigateTo('home')" data-en="🏠 Home" data-mr="🏠 मुख्य पृष्ठ">🏠 Home</a> 
+      <a class="nav-link cursor-pointer" onclick="navigateTo('about')" data-en="🙏 About" data-mr="🙏 आमच्याबद्दल">🙏 About</a> 
+      <a class="nav-link cursor-pointer" onclick="navigateTo('register')" data-en="📋 Register" data-mr="📋 नोंदणी करा">📋 Register</a> 
+      <a class="nav-link cursor-pointer" onclick="navigateTo('values')" data-en="🌸 Values" data-mr="🌸 मूल्ये">🌸 Values</a> 
+      <a class="nav-link cursor-pointer" onclick="navigateTo('gallery')" data-en="📸 Gallery" data-mr="📸 गॅलरी">📸 Gallery</a> 
+      <a class="nav-link cursor-pointer" onclick="navigateTo('contact')" data-en="📞 Contact" data-mr="📞 संपर्क">📞 Contact</a> 
+      <button class="tab-btn text-xs" onclick="toggleLang()" id="lang-btn">मराठी</button>
      </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm font-medium"><a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('home');toggleMenu()">🏠 Home</a> <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('about');toggleMenu()">🙏 About</a> <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('register');toggleMenu()">📋 Register</a> <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('values');toggleMenu()">🌸 Values</a> <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('gallery');toggleMenu()">📸 Gallery</a> <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('contact');toggleMenu()">📞 Contact</a> <button class="tab-btn text-xs" onclick="toggleLang()">हिंदी</button>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm font-medium">
+      <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('home');toggleMenu()" data-en="🏠 Home" data-mr="🏠 मुख्य पृष्ठ">🏠 Home</a> 
+      <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('about');toggleMenu()" data-en="🙏 About" data-mr="🙏 आमच्याबद्दल">🙏 About</a> 
+      <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('register');toggleMenu()" data-en="📋 Register" data-mr="📋 नोंदणी करा">📋 Register</a> 
+      <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('values');toggleMenu()" data-en="🌸 Values" data-mr="🌸 मूल्ये">🌸 Values</a> 
+      <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('gallery');toggleMenu()" data-en="📸 Gallery" data-mr="📸 गॅलरी">📸 Gallery</a> 
+      <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('contact');toggleMenu()" data-en="📞 Contact" data-mr="📞 संपर्क">📞 Contact</a> 
+      <button class="tab-btn text-xs" onclick="toggleLang()">मराठी</button>
     </div>
-   </nav><!-- Sections Container -->
-   <div id="sections-container"><!-- HOME -->
-    <section id="sec-home" class="py-12 px-4">
+   </nav><div id="sections-container"><section id="sec-home" class="py-12 px-4">
      <div class="max-w-5xl mx-auto text-center">
       <div class="anim-fade">
+        <img src="file:///C:/Users/PareshPatil/OneDrive - cloudaeon.net/Download/Untitled design.png" alt="Chh.SambhajiNagar Balshakti Seminar" class="w-full max-w-4xl mx-auto h-auto rounded-3xl shadow-md mb-8 border-4 border-white/50" data-en="Seminar Photo" data-mr="सेमिनार फोटो">
+
        <div class="text-6xl mb-4 anim-float">
         🧘‍♀️
        </div>
-       <h1 id="hero-title" class="font-display text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 bg-clip-text text-transparent leading-tight">Balshakti Registration</h1>
-       <p id="hero-sub" class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Join our Balshakti Seminar – a spiritually enriching experience for children learning Sahaj Yoga, meditation, values, and the wisdom of Shri Mataji Nirmala Devi.</p>
+       <h1 class="font-display text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 bg-clip-text text-transparent leading-tight" data-en="Chh.SambhajiNagar Balshakti Seminar" data-mr="छत्रपती संभाजीनगर बालशक्ती सेमिनार">Chh.SambhajiNagar Balshakti Seminar</h1>
+       <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-en="Join our Balshakti Seminar – a spiritually enriching experience for children learning Sahaj Yoga, meditation, values, and the wisdom of Shri Mataji Nirmala Devi." data-mr="बालशक्ती सेमिनारमध्ये सामील व्हा - सहज योग, ध्यान, मूल्ये आणि श्री माताजी निर्मला देवी यांच्या शिकवणीतून मुलांसाठी एक आध्यात्मिक आणि समृद्ध अनुभव.">Join our Balshakti Seminar – a spiritually enriching experience for children learning Sahaj Yoga, meditation, values, and the wisdom of Shri Mataji Nirmala Devi.</p>
+       
+       <div class="mt-5 flex justify-center items-center gap-2 text-amber-800 bg-amber-100/80 border border-amber-200 px-5 py-2 rounded-full w-max mx-auto font-medium shadow-sm">
+        <span class="text-xl">📅</span> <span data-en="1 May (Friday) &amp; 2 May (Saturday)" data-mr="१ मे (शुक्रवार) आणि २ मे (शनिवार)">1 May (Friday) &amp; 2 May (Saturday)</span>
+       </div>
+       
+       <div class="mt-3 flex justify-center items-center gap-2 text-blue-800 bg-blue-100/80 border border-blue-200 px-5 py-2 rounded-full w-max mx-auto font-medium shadow-sm">
+        <span class="text-xl">🧒</span> <span data-en="Age group – 4 to 16" data-mr="वयोगट – ४ ते १६">Age group – 4 to 16</span>
+       </div>
+
       </div>
-      <div class="mt-8 flex flex-wrap justify-center gap-4 anim-fade anim-d2"><button class="btn-primary text-lg" onclick="navigateTo('register')">📋 Register for Seminar</button> <button class="btn-primary text-lg" style="background:linear-gradient(135deg,#22c55e,#16a34a)" onclick="navigateTo('about')">🙏 Learn More</button>
+      <div class="mt-8 flex flex-wrap justify-center gap-4 anim-fade anim-d2">
+        <button class="btn-primary text-lg" onclick="navigateTo('register')" data-en="📋 Register for Seminar" data-mr="📋 सेमिनारसाठी नोंदणी करा">📋 Register for Seminar</button> 
+        <button class="btn-primary text-lg" style="background:linear-gradient(135deg,#22c55e,#16a34a)" onclick="navigateTo('about')" data-en="🙏 Learn More" data-mr="🙏 अधिक जाणून घ्या">🙏 Learn More</button>
       </div>
       <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 anim-fade anim-d3">
        <div class="glow-card bg-white p-5 text-center">
-        <div class="text-3xl mb-2">
-         📚
-        </div>
-        <div class="font-display font-bold text-amber-600">
-         Jr. Kg to 10th
-        </div>
-        <div class="text-xs text-gray-500">
-         All Standards
-        </div>
+        <div class="text-3xl mb-2">📚</div>
+        <div class="font-display font-bold text-amber-600" data-en="Jr. Kg to 10th" data-mr="ज्यु. केजी ते १० वी">Jr. Kg to 10th</div>
+        <div class="text-xs text-gray-500" data-en="All Standards" data-mr="सर्व इयत्ता">All Standards</div>
        </div>
        <div class="glow-card bg-white p-5 text-center">
-        <div class="text-3xl mb-2">
-         🧘‍♀️
-        </div>
-        <div class="font-display font-bold text-blue-600">
-         Meditation
-        </div>
-        <div class="text-xs text-gray-500">
-         Inner Peace
-        </div>
+        <div class="text-3xl mb-2">🧘‍♀️</div>
+        <div class="font-display font-bold text-blue-600" data-en="Meditation" data-mr="ध्यान">Meditation</div>
+        <div class="text-xs text-gray-500" data-en="Inner Peace" data-mr="आंतरिक शांती">Inner Peace</div>
        </div>
        <div class="glow-card bg-white p-5 text-center">
-        <div class="text-3xl mb-2">
-         🙏
-        </div>
-        <div class="font-display font-bold text-green-600">
-         Values &amp; Culture
-        </div>
-        <div class="text-xs text-gray-500">
-         Spiritual Growth
-        </div>
+        <div class="text-3xl mb-2">🙏</div>
+        <div class="font-display font-bold text-green-600" data-en="Values &amp; Culture" data-mr="मूल्ये आणि संस्कृती">Values &amp; Culture</div>
+        <div class="text-xs text-gray-500" data-en="Spiritual Growth" data-mr="आध्यात्मिक प्रगती">Spiritual Growth</div>
        </div>
        <div class="glow-card bg-white p-5 text-center">
-        <div class="text-3xl mb-2">
-         🪷
-        </div>
-        <div class="font-display font-bold text-pink-600">
-         Shri Mataji's Teachings
-        </div>
-        <div class="text-xs text-gray-500">
-         Wisdom &amp; Joy
-        </div>
+        <div class="text-3xl mb-2">🪷</div>
+        <div class="font-display font-bold text-pink-600" data-en="Shri Mataji's Teachings" data-mr="श्री माताजींची शिकवण">Shri Mataji's Teachings</div>
+        <div class="text-xs text-gray-500" data-en="Wisdom &amp; Joy" data-mr="शहाणपण आणि आनंद">Wisdom &amp; Joy</div>
        </div>
       </div>
       <div class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow-sm max-w-3xl mx-auto anim-fade anim-d4">
-       <h2 class="font-display text-2xl font-bold text-amber-600 mb-3">What is Balshakti Seminar?</h2>
-       <p class="text-gray-600 leading-relaxed">Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟</p>
+       <h2 class="font-display text-2xl font-bold text-amber-600 mb-3" data-en="What is Balshakti Seminar?" data-mr="बालशक्ती सेमिनार म्हणजे काय?">What is Balshakti Seminar?</h2>
+       <p class="text-gray-600 leading-relaxed" data-en="Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟" data-mr="बालशक्ती सेमिनार हा एक विशेष कार्यक्रम आहे जिथे मुले सहज योग ध्यान, आध्यात्मिक मूल्ये आणि श्री माताजी निर्मला देवी यांची सुंदर शिकवण शिकतात. ध्यान, चर्चा आणि सांस्कृतिक कार्यक्रमांद्वारे मुले आंतरिक शांती, निरागसता आणि सत्य शोधतात. आपला आंतरिक आध्यात्मिक प्रकाश जागृत करण्यासाठी आमच्यात सामील व्हा! 🌟">Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟</p>
       </div>
      </div>
-    </section><!-- ABOUT SHRI MATAJI -->
-    <section id="sec-about" class="py-12 px-4 hidden">
+    </section><section id="sec-about" class="py-12 px-4 hidden">
      <div class="max-w-5xl mx-auto">
-      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade">🙏 About Shri Mataji</h2>
+      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="🙏 About Shri Mataji" data-mr="🙏 श्री माताजींबद्दल">🙏 About Shri Mataji</h2>
       <div class="mt-10 bg-white rounded-2xl shadow-sm overflow-hidden anim-fade anim-d1">
        <div class="p-6 md:p-8">
         <div class="text-center mb-6">
-         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center text-5xl shadow-inner">
-          🙏
-         </div>
-         <h3 class="font-display text-2xl font-bold mt-4 text-gray-800">Shri Mataji Nirmala Devi</h3>
-         <p class="text-amber-600 font-medium">Founder of Sahaj Yoga (1923 – 2011)</p>
+         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center text-5xl shadow-inner">🙏</div>
+         <h3 class="font-display text-2xl font-bold mt-4 text-gray-800" data-en="Shri Mataji Nirmala Devi" data-mr="श्री माताजी निर्मला देवी">Shri Mataji Nirmala Devi</h3>
+         <p class="text-amber-600 font-medium" data-en="Founder of Sahaj Yoga (1923 – 2011)" data-mr="सहज योगाच्या संस्थापिका (१९२३ - २०११)">Founder of Sahaj Yoga (1923 – 2011)</p>
         </div>
         <div class="space-y-4 text-gray-600 leading-relaxed">
-         <p>Shri Mataji Nirmala Devi was born on <strong>March 21, 1923</strong>, in Chindwara, India. Even as a child, she was extraordinary – wise, compassionate, and full of divine love.</p>
-         <p>She participated in India's freedom movement and stayed at Mahatma Gandhi's ashram. Gandhi was deeply impressed by her wisdom even at a young age.</p>
-         <p>On <strong>May 5, 1970</strong>, she opened the Sahasrara Chakra, making it possible for everyone to achieve self-realization through Sahaj Yoga meditation.</p>
+            
+            <div class="bg-blue-50 p-6 rounded-2xl border-2 border-dashed border-blue-200 text-center text-blue-700 font-medium my-6 flex flex-col items-center gap-3">
+              <span class="text-5xl">🧒</span>
+              <p data-en="[Add photo of a girl meditating here]" data-mr="[ध्यान करणारी मुलगी येथे फोटो जोडा]">[Add photo of a girl meditating here]</p>
+              <p class="text-xs text-blue-500">e.g. &lt;img src="path/to/girl_image.jpg" ... /&gt;</p>
+            </div>
+
+         <p data-en="Shri Mataji Nirmala Devi was born on <strong>March 21, 1923</strong>, in Chindwara, India. Even as a child, she was extraordinary – wise, compassionate, and full of divine love." data-mr="श्री माताजी निर्मला देवी यांचा जन्म <strong>२१ मार्च १९२३</strong> रोजी छिंदवाडा, भारत येथे झाला. लहानपणापासूनच त्या विलक्षण - शहाण्या, दयाळू आणि दैवी प्रेमाने परिपूर्ण होत्या.">Shri Mataji Nirmala Devi was born on <strong>March 21, 1923</strong>, in Chindwara, India. Even as a child, she was extraordinary – wise, compassionate, and full of divine love.</p>
+         <p data-en="She participated in India's freedom movement and stayed at Mahatma Gandhi's ashram. Gandhi was deeply impressed by her wisdom even at a young age." data-mr="त्यांनी भारताच्या स्वातंत्र्यलढ्यात सहभाग घेतला आणि महात्मा गांधींच्या आश्रमात वास्तव्य केले. गांधीजी त्यांच्या लहान वयातील शहाणपणाने खूप प्रभावित झाले होते.">She participated in India's freedom movement and stayed at Mahatma Gandhi's ashram. Gandhi was deeply impressed by her wisdom even at a young age.</p>
+         <p data-en="On <strong>May 5, 1970</strong>, she opened the Sahasrara Chakra, making it possible for everyone to achieve self-realization through Sahaj Yoga meditation." data-mr="<strong>५ मे १९७०</strong> रोजी त्यांनी सहस्रार चक्र उघडले, ज्यामुळे सहज योग ध्यानाद्वारे सर्वांना आत्मसाक्षात्कार प्राप्त करणे शक्य झाले.">On <strong>May 5, 1970</strong>, she opened the Sahasrara Chakra, making it possible for everyone to achieve self-realization through Sahaj Yoga meditation.</p>
         </div>
        </div>
       </div>
       <div class="mt-8 grid md:grid-cols-2 gap-6">
        <div class="glow-card bg-white p-6 anim-fade anim-d2">
-        <h4 class="font-display text-xl font-bold text-pink-600 mb-3">🧒 Childhood Stories</h4>
+        <h4 class="font-display text-xl font-bold text-pink-600 mb-3" data-en="🧒 Childhood Stories" data-mr="🧒 बालपणीच्या कथा">🧒 Childhood Stories</h4>
         <ul class="space-y-3 text-gray-600 text-sm">
-         <li>🌸 She recognized spiritual truths even as a toddler</li>
-         <li>🌸 She could identify pure and impure food by feeling vibrations</li>
-         <li>🌸 She always helped other children and animals with love</li>
-         <li>🌸 She was a brave participant in India's independence movement</li>
+         <li data-en="🌸 She recognized spiritual truths even as a toddler" data-mr="🌸 लहान वयातच त्यांनी आध्यात्मिक सत्य ओळखले">🌸 She recognized spiritual truths even as a toddler</li>
+         <li data-en="🌸 She could identify pure and impure food by feeling vibrations" data-mr="🌸 स्पंदने जाणवून त्या शुद्ध आणि अशुद्ध अन्न ओळखू शकत होत्या">🌸 She could identify pure and impure food by feeling vibrations</li>
+         <li data-en="🌸 She always helped other children and animals with love" data-mr="🌸 त्यांनी नेहमीच इतर मुले आणि प्राण्यांना प्रेमाने मदत केली">🌸 She always helped other children and animals with love</li>
+         <li data-en="🌸 She was a brave participant in India's independence movement" data-mr="🌸 त्या भारताच्या स्वातंत्र्य चळवळीतील धाडसी सहभागी होत्या">🌸 She was a brave participant in India's independence movement</li>
         </ul>
        </div>
        <div class="glow-card bg-white p-6 anim-fade anim-d3">
-        <h4 class="font-display text-xl font-bold text-blue-600 mb-3">💎 Teachings for Children</h4>
+        <h4 class="font-display text-xl font-bold text-blue-600 mb-3" data-en="💎 Teachings for Children" data-mr="💎 मुलांसाठी शिकवण">💎 Teachings for Children</h4>
         <ul class="space-y-3 text-gray-600 text-sm">
-         <li>✨ <strong>Innocence</strong> – Be pure in heart like a child</li>
-         <li>✨ <strong>Truth</strong> – Always speak and live truthfully</li>
-         <li>✨ <strong>Love</strong> – Love everyone without conditions</li>
-         <li>✨ <strong>Respect</strong> – Honour parents, teachers, and elders</li>
-         <li>✨ <strong>Meditation</strong> – Sit quietly and feel the peace within</li>
+         <li data-en="✨ <strong>Innocence</strong> – Be pure in heart like a child" data-mr="✨ <strong>निरागसता</strong> - मुलांसारखे मनाने शुद्ध राहा">✨ <strong>Innocence</strong> – Be pure in heart like a child</li>
+         <li data-en="✨ <strong>Truth</strong> – Always speak and live truthfully" data-mr="✨ <strong>सत्य</strong> - नेहमी खरे बोला आणि जगा">✨ <strong>Truth</strong> – Always speak and live truthfully</li>
+         <li data-en="✨ <strong>Love</strong> – Love everyone without conditions" data-mr="✨ <strong>प्रेम</strong> - कोणतीही अपेक्षा न ठेवता सर्वांवर प्रेम करा">✨ <strong>Love</strong> – Love everyone without conditions</li>
+         <li data-en="✨ <strong>Respect</strong> – Honour parents, teachers, and elders" data-mr="✨ <strong>आदर</strong> - आई-वडील, शिक्षक आणि ज्येष्ठांचा आदर करा">✨ <strong>Respect</strong> – Honour parents, teachers, and elders</li>
+         <li data-en="✨ <strong>Meditation</strong> – Sit quietly and feel the peace within" data-mr="✨ <strong>ध्यान</strong> - शांत बसा आणि आतील शांती अनुभवा">✨ <strong>Meditation</strong> – Sit quietly and feel the peace within</li>
         </ul>
        </div>
       </div>
      </div>
-    </section><!-- REGISTER -->
-    <section id="sec-register" class="py-12 px-4 hidden">
+    </section><section id="sec-register" class="py-12 px-4 hidden">
      <div class="max-w-lg mx-auto">
-      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade">📋 Seminar Registration</h2>
+      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="📋 Seminar Registration" data-mr="📋 सेमिनार नोंदणी">📋 Seminar Registration</h2>
       <div class="mt-8 bg-white rounded-2xl shadow-sm p-6 md:p-8 anim-fade anim-d1">
+       
        <form id="reg-form" onsubmit="submitRegistration(event)">
         <div class="space-y-4">
+         
+         <div class="bg-amber-100/50 p-4 rounded-xl border border-amber-200">
+          <label class="block text-sm font-bold text-amber-800 mb-2" for="r-kid-count" data-en="How many kids are you registering? *" data-mr="तुम्ही किती मुलांची नोंदणी करत आहात? *">How many kids are you registering? *</label>
+          <select id="r-kid-count" name="Number of Kids" required onchange="generateKidFields()" class="w-full border border-amber-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-400 outline-none transition bg-white">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+          </select>
+         </div>
+
+         <div id="kids-container" class="space-y-4">
+           </div>
+         
+         <hr class="border-gray-200 my-4">
+
          <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-name">Child's Name *</label><input id="r-name" type="text" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition" placeholder="Enter child's name">
+          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-parent" data-en="Parent's Name *" data-mr="पालकाचे नाव *">Parent's Name *</label>
+          <input id="r-parent" name="Parent Name" type="text" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition" data-ph-en="Enter parent's name" data-ph-mr="पालकाचे नाव टाका" placeholder="Enter parent's name">
          </div>
          <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-class">Class/Standard *</label><select id="r-class" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition"><option value="">Select class</option><option>Jr. Kg</option><option>Sr. Kg</option><option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>5th</option><option>6th</option><option>7th</option><option>8th</option><option>9th</option><option>10th</option></select>
+          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-phone" data-en="Contact Number *" data-mr="संपर्क क्रमांक *">Contact Number *</label>
+          <input id="r-phone" name="Phone Number" type="tel" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition" data-ph-en="Enter phone number" data-ph-mr="फोन नंबर टाका" placeholder="Enter phone number">
          </div>
          <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-parent">Parent's Name *</label><input id="r-parent" type="text" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition" placeholder="Enter parent's name">
-         </div>
-         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-phone">Contact Number *</label><input id="r-phone" type="tel" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition" placeholder="Enter phone number">
-         </div>
-         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-city">Area in Aurangabad *</label><select id="r-city" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition"><option value="">Select area</option><option>Aurangpura</option><option>Paithan Gate</option><option>Begumpura</option><option>Garkheda</option><option>Mondha</option><option>Kranti Chowk</option><option>Cantonment</option><option>Cidco N-1</option><option>Cidco N-2</option><option>Cidco N-3</option><option>Cidco N-4</option><option>Cidco N-5</option><option>Prozone Area</option><option>Railway Station Area</option><option>Baba Petrol Pump</option><option>Nirala Bazaar</option><option>Shendra</option><option>Waluj</option><option>Khed</option><option>Vaipur</option></select>
+          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-city" data-en="Area in Aurangabad *" data-mr="छत्रपती संभाजीनगरमधील विभाग *">Area in Aurangabad *</label>
+          <select id="r-city" name="Area" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition">
+           <option value="" data-en="Select area" data-mr="विभाग निवडा">Select area</option>
+           <option value="Aurangpura">Aurangpura</option>
+           <option value="Paithan Gate">Paithan Gate</option>
+           <option value="Begumpura">Begumpura</option>
+           <option value="Garkheda">Garkheda</option>
+           <option value="Mondha">Mondha</option>
+           <option value="Kranti Chowk">Kranti Chowk</option>
+           <option value="Cantonment">Cantonment</option>
+           <option value="Cidco N-1">Cidco N-1</option>
+           <option value="Cidco N-2">Cidco N-2</option>
+           <option value="Cidco N-3">Cidco N-3</option>
+           <option value="Cidco N-4">Cidco N-4</option>
+           <option value="Cidco N-5">Cidco N-5</option>
+           <option value="Prozone Area">Prozone Area</option>
+           <option value="Railway Station Area">Railway Station Area</option>
+           <option value="Baba Petrol Pump">Baba Petrol Pump</option>
+           <option value="Nirala Bazaar">Nirala Bazaar</option>
+           <option value="Shendra">Shendra</option>
+           <option value="Waluj">Waluj</option>
+           <option value="Khed">Khed</option>
+           <option value="Vaipur">Vaipur</option>
+           <option value="Hudco">Hudco</option>
+          </select>
          </div>
         </div>
-        <div class="mt-6 bg-amber-50 rounded-xl p-4 text-center">
-         <p class="text-sm text-gray-600">Participation Fee: <strong id="fee-display" class="text-lg text-amber-600">₹150</strong></p>
-         <p class="text-xs text-gray-400 mt-1">Payment to be made at the seminar venue</p>
-        </div><button id="reg-btn" type="submit" class="btn-primary w-full mt-6 text-center">✅ Register Now</button>
+        
+        <div class="mt-6 bg-amber-50 rounded-xl p-4 text-center border border-amber-100">
+         <p class="text-sm text-gray-600"><span data-en="Total Entry Fee:" data-mr="एकूण प्रवेश शुल्क:">Total Entry Fee:</span> <strong id="fee-display" class="text-xl text-amber-600 font-display">₹150</strong></p>
+        </div>
+
+        <div id="payment-section" class="hidden mt-6 bg-white p-6 rounded-2xl shadow-sm border border-blue-200 text-center transition-all duration-500">
+          <h3 class="font-display text-xl font-bold text-blue-600 mb-2" data-en="Pay to Confirm" data-mr="पुष्टी करण्यासाठी पे करा">Pay to Confirm</h3>
+          <p class="text-sm text-gray-600 mb-4">
+              <span data-en="Please pay " data-mr="कृपया खालील बटण वापरून ">Please pay </span><strong id="dynamic-payment-amount" class="text-blue-700">₹150</strong>
+              <span data-en=" to Kritika with UPI ID 8208487054@ptyes." data-mr=" भरून कृतिकाला पे करा (UPI ID 8208487054@ptyes)."> to Kritika with UPI ID 8208487054@ptyes.</span>
+          </p>
+          
+          <div class="mb-6 mt-2">
+            <a id="upi-pay-btn" href="#" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all transform hover:-translate-y-1 w-full max-w-xs mx-auto">
+              <span class="text-xl">💸</span> <span data-en="Pay via UPI App" data-mr="UPI ॲपद्वारे पे करा">Pay via UPI App</span> (₹<span id="upi-btn-amount">150</span>)
+            </a>
+            <p class="text-xs text-gray-400 mt-2" data-en="(Works best on mobile devices with UPI apps installed.)" data-mr="(हे UPI ॲप्स असलेल्या मोबाईलवर उत्तम काम करते.)">(Works best on mobile devices with UPI apps installed.)</p>
+          </div>
+          
+          <div class="text-left mt-6 bg-gray-50 p-4 rounded-xl border border-gray-200">
+            <label class="block text-sm font-bold text-gray-700 mb-2" for="r-screenshot" data-en="📸 Upload Payment Screenshot *" data-mr="📸 पेमेंटचा स्क्रीनशॉट अपलोड करा *">📸 Upload Payment Screenshot *</label>
+            <input type="file" id="r-screenshot" name="Payment Screenshot File" accept="image/*" onchange="checkScreenshot()" required class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 outline-none transition">
+            <p class="text-xs text-gray-400 mt-2" data-en="Your registration button will unlock after uploading the screenshot." data-mr="स्क्रीनशॉट अपलोड केल्यानंतर तुमचे नोंदणी बटण अनलॉक होईल.">Your registration button will unlock after uploading the screenshot.</p>
+            
+            <img id="screenshot-preview" class="hidden mt-4 mx-auto w-48 rounded-lg shadow-sm border border-gray-200" alt="Screenshot Preview">
+          </div>
+        </div>
+
+        <button id="reg-btn" type="submit" disabled class="btn-primary w-full mt-6 text-center shadow-lg" data-en="✅ Register Now" data-mr="✅ आता नोंदणी करा">✅ Register Now</button>
         <div id="reg-msg" class="hidden mt-4 text-center p-3 rounded-xl text-sm font-medium"></div>
        </form>
       </div>
      </div>
-    </section><!-- VALUES -->
+    </section>
+    
+    <section id="sec-success" class="py-12 px-4 hidden flex items-center justify-center min-h-[60vh]">
+     <div class="max-w-lg mx-auto text-center bg-white p-10 rounded-3xl shadow-lg border border-green-100 anim-fade">
+      <div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center text-5xl mb-6 shadow-inner">
+       🎉
+      </div>
+      <h2 class="font-display text-3xl font-bold text-green-600 mb-4" data-en="You are registered for the seminar!" data-mr="तुम्ही सेमिनारसाठी नोंदणीकृत आहात!">You are registered for the seminar!</h2>
+      <p class="text-gray-600 text-lg" data-en="Thank you for joining the seminar and cooperating with us." data-mr="सेमिनारमध्ये सहभागी झाल्याबद्दल आणि आम्हाला सहकार्य केल्याबद्दल धन्यवाद.">Thank you for joining the seminar and cooperating with us.</p>
+      
+      <div class="mt-8 text-sm text-gray-400 flex items-center justify-center gap-2">
+        <svg class="animate-spin h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <span data-en="Redirecting to home in 5 seconds..." data-mr="५ सेकंदात मुख्य पृष्ठावर परत जात आहे...">Redirecting to home in 5 seconds...</span>
+      </div>
+     </div>
+    </section>
+
     <section id="sec-values" class="py-12 px-4 hidden">
      <div class="max-w-5xl mx-auto">
-      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade">🌸 Daily Values &amp; Tips</h2>
+      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="🌸 Daily Values &amp; Tips" data-mr="🌸 दैनंदिन मूल्ये आणि टिप्स">🌸 Daily Values &amp; Tips</h2>
       <div class="mt-10 grid md:grid-cols-2 gap-6">
        <div class="glow-card bg-white p-6 anim-fade anim-d1">
-        <h4 class="font-display text-xl font-bold text-green-600 mb-4">✅ Good Habits</h4>
+        <h4 class="font-display text-xl font-bold text-green-600 mb-4" data-en="✅ Good Habits" data-mr="✅ चांगल्या सवयी">✅ Good Habits</h4>
         <ul class="space-y-3 text-gray-600 text-sm">
-         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span>Meditate every morning for 10 minutes</li>
-         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span>Respect your parents and teachers always</li>
-         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span>Speak the truth with kindness</li>
-         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span>Help others without expecting anything</li>
-         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span>Keep your surroundings clean</li>
-         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span>Read good books every day</li>
+         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span><span data-en="Meditate every morning for 10 minutes" data-mr="दररोज सकाळी १० मिनिटे ध्यान करा">Meditate every morning for 10 minutes</span></li>
+         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span><span data-en="Respect your parents and teachers always" data-mr="आपल्या आईवडिलांचा आणि शिक्षकांचा नेहमी आदर करा">Respect your parents and teachers always</span></li>
+         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span><span data-en="Speak the truth with kindness" data-mr="नेहमी खरे आणि नम्रतेने बोला">Speak the truth with kindness</span></li>
+         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span><span data-en="Help others without expecting anything" data-mr="कोणतीही अपेक्षा न ठेवता इतरांना मदत करा">Help others without expecting anything</span></li>
+         <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">●</span><span data-en="Keep your surroundings clean" data-mr="आपला परिसर स्वच्छ ठेवा">Keep your surroundings clean</span></li>
         </ul>
        </div>
        <div class="glow-card bg-white p-6 anim-fade anim-d2">
-        <h4 class="font-display text-xl font-bold text-red-500 mb-4">❌ Qualities to Avoid</h4>
+        <h4 class="font-display text-xl font-bold text-red-500 mb-4" data-en="❌ Qualities to Avoid" data-mr="❌ टाळण्याचे गुण">❌ Qualities to Avoid</h4>
         <ul class="space-y-3 text-gray-600 text-sm">
-         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span>Anger and fighting with others</li>
-         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span>Telling lies or cheating</li>
-         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span>Being jealous of friends</li>
-         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span>Wasting time on screens too much</li>
-         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span>Disrespecting elders</li>
-         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span>Being lazy about studies</li>
+         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span><span data-en="Anger and fighting with others" data-mr="राग आणि इतरांशी भांडण करणे">Anger and fighting with others</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span><span data-en="Telling lies or cheating" data-mr="खोटे बोलणे किंवा फसवणूक करणे">Telling lies or cheating</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span><span data-en="Being jealous of friends" data-mr="मित्रांचा हेवा करणे">Being jealous of friends</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span><span data-en="Wasting time on screens too much" data-mr="टीव्ही आणि मोबाईलवर जास्त वेळ वाया घालवणे">Wasting time on screens too much</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">●</span><span data-en="Disrespecting elders" data-mr="मोठ्यांचा अनादर करणे">Disrespecting elders</span></li>
         </ul>
        </div>
        <div class="glow-card bg-white p-6 anim-fade anim-d3">
-        <h4 class="font-display text-xl font-bold text-blue-600 mb-4">🧘 Meditation Tips</h4>
+        <h4 class="font-display text-xl font-bold text-blue-600 mb-4" data-en="🧘 Meditation Tips" data-mr="🧘 ध्यान करण्याच्या टिप्स">🧘 Meditation Tips</h4>
         <ul class="space-y-3 text-gray-600 text-sm">
-         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span>Sit comfortably with your back straight</li>
-         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span>Place hands open on your lap, palms up</li>
-         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span>Close your eyes and focus on top of your head</li>
-         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span>Say inside: "I am the Spirit"</li>
-         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span>Feel the cool breeze on your hands</li>
-         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span>Meditate for 10-15 minutes daily</li>
+         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span><span data-en="Sit comfortably with your back straight" data-mr="पाठ सरळ ठेवून आरामात बसा">Sit comfortably with your back straight</span></li>
+         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span><span data-en="Place hands open on your lap, palms up" data-mr="हात मांडीवर उघडे ठेवा, तळवे वरच्या दिशेने">Place hands open on your lap, palms up</span></li>
+         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span><span data-en="Close your eyes and focus on top of your head" data-mr="डोळे बंद करा आणि डोक्याच्या वरच्या भागावर लक्ष केंद्रित करा">Close your eyes and focus on top of your head</span></li>
+         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span><span data-en="Say inside: 'I am the Spirit'" data-mr="मनातल्या मनात म्हणा: 'मी आत्मा आहे'">Say inside: "I am the Spirit"</span></li>
+         <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">●</span><span data-en="Feel the cool breeze on your hands" data-mr="आपल्या हातांवर थंड लहरी अनुभवा">Feel the cool breeze on your hands</span></li>
         </ul>
        </div>
        <div class="glow-card bg-white p-6 anim-fade anim-d4">
-        <h4 class="font-display text-xl font-bold text-purple-600 mb-4">🌈 Positive Qualities</h4>
+        <h4 class="font-display text-xl font-bold text-purple-600 mb-4" data-en="🌈 Positive Qualities" data-mr="🌈 सकारात्मक गुण">🌈 Positive Qualities</h4>
         <ul class="space-y-3 text-gray-600 text-sm">
-         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><strong>Innocence</strong> – Pure heart of Shri Ganesha</li>
-         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><strong>Compassion</strong> – Feel for all living beings</li>
-         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><strong>Generosity</strong> – Share what you have</li>
-         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><strong>Patience</strong> – Stay calm in all situations</li>
-         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><strong>Creativity</strong> – Express your inner joy</li>
-         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><strong>Gratitude</strong> – Be thankful every day</li>
+         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><span data-en="<strong>Innocence</strong> – Pure heart of Shri Ganesha" data-mr="<strong>निरागसता</strong> - श्री गणेशाचे शुद्ध हृदय"><strong>Innocence</strong> – Pure heart of Shri Ganesha</span></li>
+         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><span data-en="<strong>Compassion</strong> – Feel for all living beings" data-mr="<strong>करुणा</strong> - सर्व सजीवांबद्दल सहानुभूती"><strong>Compassion</strong> – Feel for all living beings</span></li>
+         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><span data-en="<strong>Generosity</strong> – Share what you have" data-mr="<strong>उदारता</strong> - तुमच्याकडे जे आहे ते इतरांसोबत शेअर करा"><strong>Generosity</strong> – Share what you have</span></li>
+         <li class="flex items-start gap-2"><span class="text-purple-400 mt-0.5">●</span><span data-en="<strong>Patience</strong> – Stay calm in all situations" data-mr="<strong>संयम</strong> - सर्व परिस्थितीत शांत राहा"><strong>Patience</strong> – Stay calm in all situations</span></li>
         </ul>
        </div>
       </div>
      </div>
-    </section><!-- GALLERY -->
-    <section id="sec-gallery" class="py-12 px-4 hidden">
+    </section><section id="sec-gallery" class="py-12 px-4 hidden">
      <div class="max-w-5xl mx-auto">
-      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade">📸 Gallery</h2>
+      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="📸 Gallery" data-mr="📸 गॅलरी">📸 Gallery</h2>
       <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery-grid">
       </div>
      </div>
-    </section><!-- CONTACT -->
-    <section id="sec-contact" class="py-12 px-4 hidden">
+    </section><section id="sec-contact" class="py-12 px-4 hidden">
      <div class="max-w-3xl mx-auto">
-      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade">📞 Contact Us</h2>
+      <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="📞 Contact Us" data-mr="📞 आमच्याशी संपर्क साधा">📞 Contact Us</h2>
       <div class="mt-10 grid md:grid-cols-2 gap-6">
        <div class="glow-card bg-white p-6 anim-fade anim-d1">
-        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Get in Touch</h4>
+        <h4 class="font-display text-xl font-bold text-gray-800 mb-4" data-en="Get in Touch" data-mr="संपर्कात रहा">Get in Touch</h4>
         <div class="space-y-4 text-gray-600">
          <div class="flex items-center gap-3">
           <span class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-lg">📱</span>
           <div>
-           <p class="text-xs text-gray-400">WhatsApp</p>
+           <p class="text-xs text-gray-400" data-en="WhatsApp" data-mr="व्हॉट्सॲप">WhatsApp</p>
            <p class="font-medium">+91 98765 43210</p>
           </div>
          </div>
          <div class="flex items-center gap-3">
           <span class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-lg">📧</span>
           <div>
-           <p class="text-xs text-gray-400">Email</p>
+           <p class="text-xs text-gray-400" data-en="Email" data-mr="ईमेल">Email</p>
            <p class="font-medium">ypprogamer124@gmail.com</p>
           </div>
          </div>
          <div class="flex items-center gap-3">
           <span class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-lg">🌐</span>
           <div>
-           <p class="text-xs text-gray-400">Website</p>
+           <p class="text-xs text-gray-400" data-en="Website" data-mr="वेबसाईट">Website</p>
            <p class="font-medium">sahajyoga.org</p>
           </div>
          </div>
         </div>
        </div>
        <div class="glow-card bg-white p-6 anim-fade anim-d2">
-        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Join Our Community</h4>
-        <p class="text-gray-600 text-sm mb-4">Stay connected with Balshakti activities, seminars, and quiz updates!</p><a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-500 text-white px-5 py-3 rounded-xl font-semibold hover:bg-green-600 transition text-sm">💬 Join WhatsApp Group</a>
+        <h4 class="font-display text-xl font-bold text-gray-800 mb-4" data-en="Join Our Community" data-mr="आमच्या समुदायात सामील व्हा">Join Our Community</h4>
+        <p class="text-gray-600 text-sm mb-4" data-en="Stay connected with Balshakti activities, seminars, and quiz updates!" data-mr="बालशक्ती उपक्रम, सेमिनार आणि प्रश्नमंजुषा अपडेट्ससह जोडलेले रहा!">Stay connected with Balshakti activities, seminars, and quiz updates!</p>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-500 text-white px-5 py-3 rounded-xl font-semibold hover:bg-green-600 transition text-sm" data-en="💬 Join WhatsApp Group" data-mr="💬 व्हॉट्सॲप ग्रुप जॉईन करा">💬 Join WhatsApp Group</a>
         <div class="mt-4 p-4 bg-amber-50 rounded-xl">
-         <p class="text-xs text-gray-500">Organized by Sahaj Yoga Meditation Centers across India. All programs are free of charge (nominal seminar fee may apply).</p>
+         <p class="text-xs text-gray-500" data-en="Organized by Sahaj Yoga Meditation Centers across India. All programs are free of charge (nominal seminar fee may apply)." data-mr="संपूर्ण भारतातील सहज योग ध्यान केंद्रांद्वारे आयोजित. सर्व कार्यक्रम विनामूल्य आहेत (नाममात्र सेमिनार शुल्क लागू होऊ शकते).">Organized by Sahaj Yoga Meditation Centers across India. All programs are free of charge (nominal seminar fee may apply).</p>
         </div>
        </div>
       </div>
      </div>
     </section>
-   </div><!-- sections-container --> <!-- Footer -->
-   <footer class="bg-gray-900 text-gray-400 py-8 px-4 mt-12">
+   </div><footer class="bg-gray-900 text-gray-400 py-8 px-4 mt-12">
     <div class="max-w-5xl mx-auto text-center">
-     <p class="font-display text-lg text-amber-400">🪷 Balshakti Registration 2025</p>
-     <p class="text-sm mt-2">Sahaj Yoga Meditation for Children</p>
-     <p class="text-xs mt-3 text-gray-500">Made with ❤️ for the spiritual growth of our children</p>
+     <p class="font-display text-lg text-amber-400" data-en="🪷 Chh.SambhajiNagar Balshakti Seminar 2025" data-mr="🪷 छत्रपती संभाजीनगर बालशक्ती सेमिनार २०२५">🪷 Chh.SambhajiNagar Balshakti Seminar 2025</p>
+     <p class="text-sm mt-2" data-en="Sahaj Yoga Meditation for Children" data-mr="मुलांसाठी सहज योग ध्यान">Sahaj Yoga Meditation for Children</p>
+     <p class="text-xs mt-3 text-gray-500" data-en="Made with ❤️ for the spiritual growth of our children" data-mr="आमच्या मुलांच्या आध्यात्मिक वाढीसाठी ❤️ ने बनवले">Made with ❤️ for the spiritual growth of our children</p>
     </div>
    </footer>
-  </div><!-- app -->
-  <script>
+  </div><script>
 // State
 let currentPage = 'home';
 let lang = 'en';
 
-// Quiz data
-const quizData = {
-  easy: [
-    { q: "When was Shri Mataji Nirmala Devi born?", opts: ["March 21, 1923", "January 1, 1930", "May 5, 1970", "August 15, 1947"], ans: 0 },
-  ],
-  medium: [],
-  hard: []
-};
-
 // Gallery items
 const galleryItems = [
-  { emoji: '🧘‍♀️', title: 'Group Meditation', color: 'from-amber-100 to-orange-100' },
-  { emoji: '🎨', title: 'Art Activities', color: 'from-blue-100 to-cyan-100' },
-  { emoji: '🎶', title: 'Bhajan Session', color: 'from-pink-100 to-rose-100' },
-  { emoji: '📖', title: 'Story Time', color: 'from-green-100 to-emerald-100' },
-  { emoji: '🏆', title: 'Quiz Winners', color: 'from-purple-100 to-violet-100' },
-  { emoji: '🪷', title: 'Puja Celebration', color: 'from-yellow-100 to-amber-100' },
+  { emoji: '🧘‍♀️', title: 'Group Meditation', mrTitle: 'गट ध्यान', color: 'from-amber-100 to-orange-100' },
+  { emoji: '🎨', title: 'Art Activities', mrTitle: 'कला उपक्रम', color: 'from-blue-100 to-cyan-100' },
+  { emoji: '🎶', title: 'Bhajan Session', mrTitle: 'भजन सत्र', color: 'from-pink-100 to-rose-100' },
+  { emoji: '📖', title: 'Story Time', mrTitle: 'गोष्टींची वेळ', color: 'from-green-100 to-emerald-100' },
+  { emoji: '🏆', title: 'Quiz Winners', mrTitle: 'प्रश्नमंजुषा विजेते', color: 'from-purple-100 to-violet-100' },
+  { emoji: '🪷', title: 'Puja Celebration', mrTitle: 'पूजा उत्सव', color: 'from-yellow-100 to-amber-100' },
 ];
 
 // Navigation
@@ -352,30 +417,278 @@ function toggleMenu() {
   document.getElementById('mobile-menu').classList.toggle('hidden');
 }
 
-// Language toggle (simplified)
-const translations = {
-  hi: {
-    heroTitle: 'बालशक्ति पंजीकरण में आपका स्वागत है!',
-    heroSub: 'सहज योग के माध्यम से बच्चों के लिए एक आनंदमय शिक्षण यात्रा – ध्यान, मूल्य और श्री माताजी निर्मला देवी की सुंदर शिक्षाओं की खोज करें।',
-  },
-  en: {
-    heroTitle: 'Welcome to Balshakti Registration!',
-    heroSub: 'A joyful learning journey for children through Sahaj Yoga – discover meditation, values, and the beautiful teachings of Shri Mataji Nirmala Devi.',
-  }
-};
-
+// Global UI Translation function
 function toggleLang() {
-  lang = lang === 'en' ? 'hi' : 'en';
-  document.getElementById('lang-btn').textContent = lang === 'en' ? 'हिंदी' : 'English';
-  document.getElementById('hero-title').textContent = translations[lang].heroTitle;
-  document.getElementById('hero-sub').textContent = translations[lang].heroSub;
+  lang = lang === 'en' ? 'mr' : 'en';
+  
+  // Update all toggle buttons text
+  document.querySelectorAll('#lang-btn, .tab-btn').forEach(btn => {
+    if(btn.textContent === 'मराठी' || btn.textContent === 'English') {
+       btn.textContent = lang === 'en' ? 'मराठी' : 'English';
+    }
+  });
+
+  // Translate elements with innerHTML mapping
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if(el.hasAttribute('data-' + lang)) {
+       el.innerHTML = el.getAttribute('data-' + lang);
+    }
+  });
+
+  // Translate placeholders mapping
+  document.querySelectorAll('[data-ph-en]').forEach(el => {
+    if(el.hasAttribute('data-ph-' + lang)) {
+       el.placeholder = el.getAttribute('data-ph-' + lang);
+    }
+  });
+  
+  // Re-generate kids fields with correct language labels
+  if (document.getElementById('r-kid-count')) {
+    generateKidFields(false); // false means don't clear inputs if possible
+  }
+  
+  // Re-render gallery if we are on it
+  if(currentPage === 'gallery') {
+    document.getElementById('gallery-grid').innerHTML = '';
+    renderGallery();
+  }
 }
 
-// Registration
-function submitRegistration(e) {
-  e.preventDefault();
-  // Open Google Form in new tab
-  window.open('https://forms.gle/6SxPAUhip59bnnub6', '_blank');
+// Language dictionary for dynamic Kid form generation
+const formLang = {
+  en: {
+    title: '🧒 Child',
+    details: 'Details',
+    name: "Child's Name *",
+    namePh: "Enter name",
+    age: "Age *",
+    ageOpt: "Select Age",
+    gender: "Gender *",
+    genderOpt: "Select",
+    male: "Male",
+    female: "Female"
+  },
+  mr: {
+    title: '🧒 मूल',
+    details: 'तपशील',
+    name: "मुलाचे नाव *",
+    namePh: "नाव टाका",
+    age: "वय *",
+    ageOpt: "वय निवडा",
+    gender: "लिंग *",
+    genderOpt: "निवडा",
+    male: "मुलगा",
+    female: "मुलगी"
+  }
+}
+
+// Dynamic Form Generator for Kids
+function generateKidFields(clearInputs = true) {
+  const count = parseInt(document.getElementById('r-kid-count').value) || 1;
+  const container = document.getElementById('kids-container');
+  const t = formLang[lang]; // Get language strings
+  
+  // Save existing values if we are just switching language
+  let savedData = [];
+  if (!clearInputs) {
+      for(let i=1; i<=4; i++) {
+          let nameEl = document.getElementById(`r-name-${i}`);
+          let ageEl = document.getElementById(`r-age-${i}`);
+          let genEl = document.getElementById(`r-gender-${i}`);
+          if(nameEl) savedData[i] = { name: nameEl.value, age: ageEl.value, gen: genEl.value };
+      }
+  }
+
+  container.innerHTML = ''; // clear out old fields
+
+  // Build the age options string (4 to 16 based on age group requested)
+  let ageOptions = `<option value="">${t.ageOpt}</option>`;
+  for(let a = 4; a <= 16; a++) {
+    ageOptions += `<option value="${a}">${a}</option>`;
+  }
+
+  // Loop to generate fields for each kid
+  for(let i = 1; i <= count; i++) {
+    const kidHTML = `
+      <div class="p-4 bg-white rounded-xl space-y-4 border border-gray-100 shadow-sm relative">
+        <h4 class="font-display font-bold text-amber-600">${t.title} ${i} ${t.details}</h4>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1" for="r-name-${i}">${t.name}</label>
+          <input id="r-name-${i}" type="text" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition bg-gray-50" placeholder="${t.namePh}">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="r-age-${i}">${t.age}</label>
+            <select id="r-age-${i}" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition bg-gray-50">
+              ${ageOptions}
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="r-gender-${i}">${t.gender}</label>
+            <select id="r-gender-${i}" required class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-amber-300 focus:border-amber-400 outline-none transition bg-gray-50">
+              <option value="">${t.genderOpt}</option>
+              <option value="Male">${t.male}</option>
+              <option value="Female">${t.female}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    `;
+    container.innerHTML += kidHTML;
+    
+    // Restore data if switching language
+    if (!clearInputs && savedData[i]) {
+       document.getElementById(`r-name-${i}`).value = savedData[i].name;
+       document.getElementById(`r-age-${i}`).value = savedData[i].age;
+       document.getElementById(`r-gender-${i}`).value = savedData[i].gen;
+    }
+  }
+
+  // Dynamically update the fee based on kid count (150 per child)
+  const baseFee = 150;
+  const totalFee = baseFee * count;
+  document.getElementById('fee-display').textContent = '₹' + totalFee;
+  document.getElementById('dynamic-payment-amount').textContent = '₹' + totalFee;
+  
+  // UPDATE THE UPI INTENT LINK DYNAMICALLY
+  const upiLink = `upi://pay?pa=8208487054@ptyes&pn=Kritika&am=${totalFee}&cu=INR`;
+  const upiBtn = document.getElementById('upi-pay-btn');
+  if(upiBtn) {
+      upiBtn.href = upiLink;
+      document.getElementById('upi-btn-amount').textContent = totalFee;
+  }
+  
+  checkFormCompletion();
+}
+
+// Check if all text/select inputs (excluding the file upload) are filled
+function checkFormCompletion() {
+  const form = document.getElementById('reg-form');
+  const requiredInputs = form.querySelectorAll('input[required]:not(#r-screenshot), select[required]');
+  
+  let allFilled = true;
+  requiredInputs.forEach(input => {
+    if (!input.value.trim()) {
+      allFilled = false;
+    }
+  });
+
+  const paymentSection = document.getElementById('payment-section');
+  if (allFilled) {
+    paymentSection.classList.remove('hidden');
+  } else {
+    paymentSection.classList.add('hidden');
+    document.getElementById('reg-btn').disabled = true;
+  }
+}
+
+// Enable the Register button AND show image preview
+function checkScreenshot() {
+  const fileInput = document.getElementById('r-screenshot');
+  const submitBtn = document.getElementById('reg-btn');
+  const previewImg = document.getElementById('screenshot-preview');
+
+  if (fileInput.files && fileInput.files.length > 0) {
+    submitBtn.disabled = false;
+    submitBtn.classList.add('hover:bg-amber-600');
+    const imageURL = URL.createObjectURL(fileInput.files[0]);
+    previewImg.src = imageURL;
+    previewImg.classList.remove('hidden');
+  } else {
+    submitBtn.disabled = true;
+    submitBtn.classList.remove('hover:bg-amber-600');
+    previewImg.classList.add('hidden');
+    previewImg.src = '';
+  }
+}
+
+document.getElementById('reg-form').addEventListener('input', function(e) {
+  if (e.target.id !== 'r-screenshot') checkFormCompletion();
+});
+document.getElementById('reg-form').addEventListener('change', function(e) {
+  if (e.target.id !== 'r-screenshot') checkFormCompletion();
+});
+
+// Helper function to turn the image into Base64 so it can be sent to Google Sheets
+function getBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+  });
+}
+
+// DIRECT GOOGLE SHEETS SUBMIT LOGIC
+async function submitRegistration(e) {
+  e.preventDefault(); 
+  
+  const submitBtn = document.getElementById('reg-btn');
+  submitBtn.innerHTML = "⏳ Processing...";
+  submitBtn.disabled = true;
+
+  try {
+    const count = parseInt(document.getElementById('r-kid-count').value) || 1;
+    
+    // We create a payload with an Array for the kids
+    const payload = {
+      parentName: document.getElementById('r-parent').value,
+      phone: document.getElementById('r-phone').value,
+      city: document.getElementById('r-city').value,
+      entryFee: count * 150,
+      screenshot: "No image",
+      kids: [] // Array to hold the list of children
+    };
+
+    // Push each child into the array
+    for(let i = 1; i <= count; i++) {
+      payload.kids.push({
+        name: document.getElementById(`r-name-${i}`).value,
+        age: document.getElementById(`r-age-${i}`).value,
+        gender: document.getElementById(`r-gender-${i}`).value
+      });
+    }
+
+    const fileInput = document.getElementById('r-screenshot');
+    if (fileInput.files.length > 0) {
+        payload.screenshot = await getBase64(fileInput.files[0]);
+    }
+
+    // YOUR EXACT GOOGLE WEB APP URL
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwcQKBrt1JHIBWiplAXu2nrRRCJ_6s6B-cHJlDhWbBIpMXUEeB2oByV1fcAy76YxxKf4w/exec";
+
+    // Send it to Google using 'no-cors' so the browser doesn't block the request
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8',
+      },
+      body: JSON.stringify(payload)
+    });
+
+    // If successful, hide forms and show the Success Page
+    document.querySelectorAll('[id^="sec-"]').forEach(s => s.classList.add('hidden'));
+    document.getElementById('sec-success').classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Reset the form for the next user
+    document.getElementById('reg-form').reset();
+    document.getElementById('r-kid-count').value = "1";
+    generateKidFields(); 
+    checkScreenshot(); 
+    checkFormCompletion(); 
+
+    // Go back home after 5 seconds
+    setTimeout(() => {
+      navigateTo('home');
+    }, 5000);
+
+  } catch (error) {
+    alert("System Error: There was an issue processing your request. Please try again.");
+    submitBtn.innerHTML = lang === 'en' ? "✅ Register Now" : "✅ आता नोंदणी करा";
+    submitBtn.disabled = false;
+  }
 }
 
 // Gallery
@@ -386,71 +699,20 @@ function renderGallery() {
     const div = document.createElement('div');
     div.className = `glow-card bg-gradient-to-br ${item.color} p-8 text-center anim-fade`;
     div.style.animationDelay = `${i * 0.1}s`;
-    div.innerHTML = `<div class="text-5xl mb-3">${item.emoji}</div><p class="font-display font-bold text-gray-700">${item.title}</p>`;
+    
+    // Check language for gallery title
+    const displayTitle = lang === 'en' ? item.title : item.mrTitle;
+    
+    div.innerHTML = `<div class="text-5xl mb-3">${item.emoji}</div><p class="font-display font-bold text-gray-700">${displayTitle}</p>`;
     grid.appendChild(div);
   });
 }
 
-// Config
-const defaultConfig = {
-  site_title: 'Balshakti Registration',
-  welcome_text: 'Welcome to Balshakti Registration!',
-  fee_amount: '₹150',
-  background_color: '#fffef5',
-  surface_color: '#ffffff',
-  text_color: '#1f2937',
-  primary_action_color: '#f59e0b',
-  secondary_action_color: '#3b82f6',
-  font_family: 'Poppins',
-  font_size: 16
-};
-
-function applyConfig(config) {
-  const c = { ...defaultConfig, ...config };
-  document.getElementById('nav-title').textContent = c.site_title;
-  document.getElementById('hero-title').textContent = c.welcome_text;
-  document.getElementById('fee-display').textContent = c.fee_amount;
-  document.body.style.fontFamily = `${c.font_family}, Poppins, sans-serif`;
-  document.getElementById('app').style.backgroundColor = c.background_color;
-  document.querySelectorAll('.glow-card.bg-white, .bg-white').forEach(el => {
-    if (el.classList.contains('bg-white')) el.style.backgroundColor = c.surface_color;
-  });
-  document.body.style.color = c.text_color;
-  const baseSize = c.font_size || 16;
-  document.body.style.fontSize = baseSize + 'px';
-}
-
-// Element SDK init
-window.elementSdk.init({
-  defaultConfig,
-  onConfigChange: async (config) => applyConfig(config),
-  mapToCapabilities: (config) => ({
-    recolorables: [
-      { get: () => config.background_color || defaultConfig.background_color, set: v => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
-      { get: () => config.surface_color || defaultConfig.surface_color, set: v => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
-      { get: () => config.text_color || defaultConfig.text_color, set: v => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
-      { get: () => config.primary_action_color || defaultConfig.primary_action_color, set: v => { config.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); } },
-      { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: v => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } },
-    ],
-    borderables: [],
-    fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: v => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
-    fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: v => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } },
-  }),
-  mapToEditPanelValues: (config) => new Map([
-    ['site_title', config.site_title || defaultConfig.site_title],
-    ['welcome_text', config.welcome_text || defaultConfig.welcome_text],
-    ['fee_amount', config.fee_amount || defaultConfig.fee_amount],
-  ])
-});
-
-// Data SDK init
-window.dataSdk.init({
-  onDataChanged(data) { /* write-only mode */ }
-});
-
 // Init
 document.getElementById('nav-title').textContent = 'Balshakti Seminar';
 lucide.createIcons();
+generateKidFields();
+
 </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f17d09171527e96',t:'MTc3NzA2MjA5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
