@@ -128,7 +128,7 @@ tailwind.config={theme:{extend:{colors:{saffron:'#f59e0b',sky:'#38bdf8',lotus:'#
       </div>
       <div class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow-sm max-w-3xl mx-auto anim-fade anim-d4">
        <h2 class="font-display text-2xl font-bold text-amber-600 mb-3" data-en="What is Balshakti Seminar?" data-mr="बालशक्ती सेमिनार म्हणजे काय?">What is Balshakti Seminar?</h2>
-       <p class="text-gray-600 leading-relaxed" data-en="Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟" data-mr="बालशक्ती सेमिनार हा एक विशेष कार्यक्रम आहे जिथे मुले सहज योग ध्यान, आध्यात्मिक मूल्ये आणि श्री माताजी निर्मला देवी यांची सुंदर शिकवण शिकतात. ध्यान, चर्चा आणि सांस्कृतिक कार्यक्रमांद्वारे मुले आंतरिक शांती, निरागसता आणि सत्य शोधतात. आपला आंतरिक आध्यात्मिक प्रकाश जागृत करण्यासाठी आमच्यात सामील व्हा! 🌟">Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟</p>
+       <p class="text-gray-600 leading-relaxed" data-en="Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟" data-mr="बालशक्ती सेमिनार हा एक विशेष कार्यक्रम आहे जिथे मुले सहज योग ध्यान, आध्यात्मिक मूल्ये आणि श्री माताजी निर्मला देवी यांची सुंदर शिकवण शिकतात. ध्यान, चर्चा आणि सांस्कृतिक कार्यक्रमांद्वारे मुले आंतरिक शांती, निरागसता आणि सत्य शोधतात. आपला आंतरिक आध्यात्मिक प्रकाश जागृत करण्यासाठी आमच्यात सामील营 व्हा! 🌟">Balshakti Seminar is a special gathering where children learn Sahaj Yoga meditation, spiritual values, and the beautiful teachings of Shri Mataji Nirmala Devi. Through meditation, discussions, and cultural activities, children discover inner peace, innocence, and truth. Join us to awaken your inner spiritual light! 🌟</p>
       </div>
      </div>
     </section><section id="sec-about" class="py-12 px-4 hidden">
@@ -244,8 +244,8 @@ tailwind.config={theme:{extend:{colors:{saffron:'#f59e0b',sky:'#38bdf8',lotus:'#
         <div id="payment-section" class="hidden mt-6 bg-white p-6 rounded-2xl shadow-sm border border-blue-200 text-center transition-all duration-500">
           <h3 class="font-display text-xl font-bold text-blue-600 mb-2" data-en="Pay to Confirm" data-mr="पुष्टी करण्यासाठी पे करा">Pay to Confirm</h3>
           <p class="text-sm text-gray-600 mb-4">
-              <span data-en="Please pay " data-mr="कृपया खालील बटण वापरून ">Please pay </span><strong id="dynamic-payment-amount" class="text-blue-700">₹150</strong>
-              <span data-en=" to Kritika with UPI ID 8208487054@ptyes." data-mr=" भरून कृतिकाला पे करा (UPI ID 8208487054@ptyes)."> to Kritika with UPI ID 8208487054@ptyes.</span>
+              <span data-en="Please pay " data-mr="कृपया खालील रक्कम ">Please pay </span><strong id="dynamic-payment-amount" class="text-blue-700">₹150</strong>
+              <span data-en=" to Kritika." data-mr=" कृतिकाला पे करा."> to Kritika.</span>
           </p>
           
           <div class="mb-6 mt-2">
@@ -550,7 +550,7 @@ function generateKidFields(clearInputs = true) {
   document.getElementById('fee-display').textContent = '₹' + totalFee;
   document.getElementById('dynamic-payment-amount').textContent = '₹' + totalFee;
   
-  // UPDATE THE UPI INTENT LINK DYNAMICALLY
+  // UPDATE THE AUTOMATIC UPI INTENT LINK
   const upiLink = `upi://pay?pa=8208487054@ptyes&pn=Kritika&am=${totalFee}&cu=INR`;
   const upiBtn = document.getElementById('upi-pay-btn');
   if(upiBtn) {
