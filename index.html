@@ -57,7 +57,8 @@ tailwind.config={theme:{extend:{colors:{saffron:'#f59e0b',sky:'#38bdf8',lotus:'#
   <style>body { box-sizing: border-box; }</style>
  </head>
  <body class="h-full bg-warmWhite text-gray-800 lotus-bg">
-  <div id="app" class="h-full w-full overflow-auto"><nav id="navbar" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+  <div id="app" class="h-full w-full overflow-auto"><!-- Navigation -->
+   <nav id="navbar" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
      <div class="flex items-center gap-2 cursor-pointer" onclick="navigateTo('home')"><span class="text-3xl anim-float">🪷</span> <span id="nav-title" class="font-display text-xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent" data-en="Chh.SambhajiNagar Balshakti Seminar" data-mr="छत्रपती संभाजीनगर बालशक्ती सेमिनार">Chh.SambhajiNagar Balshakti Seminar</span>
      </div><button id="menu-toggle" class="md:hidden p-2" onclick="toggleMenu()"><i data-lucide="menu" class="w-6 h-6"></i></button>
@@ -80,7 +81,9 @@ tailwind.config={theme:{extend:{colors:{saffron:'#f59e0b',sky:'#38bdf8',lotus:'#
       <a class="block py-2 nav-link cursor-pointer" onclick="navigateTo('contact');toggleMenu()" data-en="📞 Contact" data-mr="📞 संपर्क">📞 Contact</a> 
       <button class="tab-btn text-xs" onclick="toggleLang()">मराठी</button>
     </div>
-   </nav><div id="sections-container"><section id="sec-home" class="py-12 px-4">
+   </nav><!-- Sections Container -->
+   <div id="sections-container"><!-- HOME -->
+    <section id="sec-home" class="py-12 px-4">
      <div class="max-w-5xl mx-auto text-center">
       <div class="anim-fade">
         <img src="seminar-banner.png" alt="Chh.SambhajiNagar Balshakti Seminar" class="w-full max-w-4xl mx-auto h-auto rounded-3xl shadow-md mb-8 border-4 border-white/50" data-en="Seminar Photo" data-mr="सेमिनार फोटो">
@@ -334,13 +337,15 @@ tailwind.config={theme:{extend:{colors:{saffron:'#f59e0b',sky:'#38bdf8',lotus:'#
        </div>
       </div>
      </div>
-    </section><section id="sec-gallery" class="py-12 px-4 hidden">
+    </section>
+    <section id="sec-gallery" class="py-12 px-4 hidden">
      <div class="max-w-5xl mx-auto">
       <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="📸 Gallery" data-mr="📸 गॅलरी">📸 Gallery</h2>
       <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery-grid">
       </div>
      </div>
-    </section><section id="sec-contact" class="py-12 px-4 hidden">
+    </section>
+    <section id="sec-contact" class="py-12 px-4 hidden">
      <div class="max-w-3xl mx-auto">
       <h2 class="font-display text-3xl font-bold text-center text-amber-600 section-title anim-fade" data-en="📞 Contact Us" data-mr="📞 आमच्याशी संपर्क साधा">📞 Contact Us</h2>
       <div class="mt-10 grid md:grid-cols-2 gap-6">
@@ -444,7 +449,7 @@ function toggleLang() {
   
   // Re-generate person fields with correct language labels
   if (document.getElementById('r-kid-count')) {
-    generateKidFields(false); // false means don't clear inputs if possible
+    generateKidFields(false); 
   }
   
   // Re-render gallery if we are on it
@@ -526,7 +531,7 @@ function calculateTotalFee() {
 function generateKidFields(clearInputs = true) {
   const count = parseInt(document.getElementById('r-kid-count').value) || 1;
   const container = document.getElementById('kids-container');
-  const t = formLang[lang]; // Get language strings
+  const t = formLang[lang]; 
   
   // Save existing values if we are just switching language
   let savedData = [];
@@ -545,11 +550,11 @@ function generateKidFields(clearInputs = true) {
       }
   }
 
-  container.innerHTML = ''; // clear out old fields
+  container.innerHTML = ''; 
 
   // Build the age options string
   let ageOptions = `<option value="">${t.ageOpt}</option>`;
-  for(let a = 4; a <= 80; a++) { // Expanded age range for adults too
+  for(let a = 4; a <= 80; a++) { 
     ageOptions += `<option value="${a}">${a}</option>`;
   }
 
@@ -652,7 +657,6 @@ document.getElementById('reg-form').addEventListener('change', function(e) {
   if (e.target.id !== 'r-screenshot') checkFormCompletion();
 });
 
-// Helper function to turn the image into Base64 so it can be sent to Google Sheets
 function getBase64(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -674,23 +678,28 @@ async function submitRegistration(e) {
     const count = parseInt(document.getElementById('r-kid-count').value) || 1;
     const finalCalculatedFee = calculateTotalFee();
     
-    // We create a payload with an Array for the persons
     const payload = {
       parentName: document.getElementById('r-parent').value,
       phone: document.getElementById('r-phone').value,
       city: document.getElementById('r-city').value,
       entryFee: finalCalculatedFee,
       screenshot: "No image",
-      kids: [] // Array to hold the list of children/persons
+      kids: [] 
     };
 
-    // Push each person into the array, including the new 'type' field
+    // Push each person into the array, including the new 'type' field AND individual fee
     for(let i = 1; i <= count; i++) {
+      let typeVal = document.getElementById(`r-type-${i}`).value;
+      let indFee = 0;
+      if (typeVal === 'Balshakti') indFee = 150;
+      else if (typeVal === 'Yuvashakti' || typeVal === 'Yathashakti') indFee = 200;
+
       payload.kids.push({
         name: document.getElementById(`r-name-${i}`).value,
         age: document.getElementById(`r-age-${i}`).value,
         gender: document.getElementById(`r-gender-${i}`).value,
-        type: document.getElementById(`r-type-${i}`).value
+        type: typeVal,
+        fee: indFee // Here is the individual fee specifically for this person!
       });
     }
 
@@ -702,7 +711,6 @@ async function submitRegistration(e) {
     // YOUR EXACT GOOGLE WEB APP URL
     const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwcQKBrt1JHIBWiplAXu2nrRRCJ_6s6B-cHJlDhWbBIpMXUEeB2oByV1fcAy76YxxKf4w/exec";
 
-    // Send it to Google using 'no-cors' so the browser doesn't block the request
     await fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
@@ -712,19 +720,16 @@ async function submitRegistration(e) {
       body: JSON.stringify(payload)
     });
 
-    // If successful, hide forms and show the Success Page
     document.querySelectorAll('[id^="sec-"]').forEach(s => s.classList.add('hidden'));
     document.getElementById('sec-success').classList.remove('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Reset the form for the next user
     document.getElementById('reg-form').reset();
     document.getElementById('r-kid-count').value = "1";
     generateKidFields(); 
     checkScreenshot(); 
     checkFormCompletion(); 
 
-    // Go back home after 5 seconds
     setTimeout(() => {
       navigateTo('home');
     }, 5000);
@@ -745,7 +750,6 @@ function renderGallery() {
     div.className = `glow-card bg-gradient-to-br ${item.color} p-8 text-center anim-fade`;
     div.style.animationDelay = `${i * 0.1}s`;
     
-    // Check language for gallery title
     const displayTitle = lang === 'en' ? item.title : item.mrTitle;
     
     div.innerHTML = `<div class="text-5xl mb-3">${item.emoji}</div><p class="font-display font-bold text-gray-700">${displayTitle}</p>`;
