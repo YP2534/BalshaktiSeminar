@@ -524,7 +524,7 @@ function calculateTotalFee() {
   if (dynamicPaymentAmount) dynamicPaymentAmount.textContent = '₹' + totalFee;
 
   // Update UPI Intent Link
-  const upiLink = `upi://pay?pa=Q33058926@ybl&pn=Balshakti&am=${totalFee}&cu=INR`;
+  const upiLink = `upi://pay?pa=7758845499@okbizaxis&pn=Balshakti&am=${totalFee}&cu=INR`;
   const upiBtn = document.getElementById('upi-pay-btn');
   if(upiBtn) {
       upiBtn.href = upiLink;
